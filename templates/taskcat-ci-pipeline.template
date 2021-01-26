@@ -258,4 +258,4 @@ Outputs:
           - Outputs.CodePipelineName
   TaskCatReports:
     Description: Path to the TaskCat report. Each report is named as CODEBUILD_BUILD_ID.zip
-    Value: !Sub 's3://${ArtifactBucket}/taskcat_reports/'
+    Value: !Sub 's3://$ARTIFACT_BUCKET/taskcat_reports/'
